@@ -24,3 +24,6 @@ gradle.properties
 
 !gradle-wrapper.jar
 
+# Golang ignores
+cauldron
+!cauldron/
