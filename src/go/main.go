@@ -11,7 +11,7 @@ import (
 
 type Cauldron struct {
 	Id     int
-	Lid    string
+	Style  string
 	Color  string
 	Symbol string
 	Count  string
@@ -79,7 +79,7 @@ func parseLine(line string) (Cauldron, error) {
 		return Cauldron{}, errors.New("Invalid file format!")
 	}
 	cauldron := Cauldron{
-		Lid:    token[0],
+		Style:  token[0],
 		Color:  token[1],
 		Symbol: token[2],
 		Count:  token[3],
@@ -112,7 +112,7 @@ func solveGrid(grid []Cauldron) CauldronSolution {
 }
 
 func checkCompliance(triplet Triplet) bool {
-	if attrMatches(triplet.C1.Lid, triplet.C2.Lid, triplet.C3.Lid) &&
+	if attrMatches(triplet.C1.Style, triplet.C2.Style, triplet.C3.Style) &&
 		attrMatches(triplet.C1.Color, triplet.C2.Color, triplet.C3.Color) &&
 		attrMatches(triplet.C1.Symbol, triplet.C2.Symbol, triplet.C3.Symbol) &&
 		attrMatches(triplet.C1.Count, triplet.C2.Count, triplet.C3.Count) {
@@ -130,7 +130,7 @@ func attrMatches(s1, s2, s3 string) bool {
 
 func printGrid(grid []Cauldron) {
 	for _, cauldron := range grid {
-		fmt.Printf("%d: Lid: %s, Color: %s, Symbol: %s, Count: %s\n",
-			cauldron.Id, cauldron.Lid, cauldron.Color, cauldron.Symbol, cauldron.Count)
+		fmt.Printf("%d: Style: %s, Color: %s, Symbol: %s, Count: %s\n",
+			cauldron.Id, cauldron.Style, cauldron.Color, cauldron.Symbol, cauldron.Count)
 	}
 }
