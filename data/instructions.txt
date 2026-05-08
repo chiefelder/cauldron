@@ -1,0 +1,8 @@
+Cauldron Game
+
+Styles: plain, lid, handle
+Colors: dark, stripes, dots
+Symbols: square, triangle, ellipse
+Count: 1, 2, 3
+
+
