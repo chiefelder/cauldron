@@ -1,0 +1,12 @@
+handle,stripes,ellipse,1
+plain,dots,triangle,1
+lid,dark,square,3
+plain,dots,ellipse,3
+handle,stripes,triangle,1
+lid,dots,ellipse,3
+lid,dark,ellipse,2
+plain,dark,triangle,3
+lid,dots,triangle,1
+lid,dots,square,3
+plain,stripes,square,2
+lid,stripes,square,1
